@@ -55,7 +55,28 @@ digraph G {
 ```
 3. 上記のテキストを **graphviz**で処理すると、下記グラフが生成される。
 
-![状態遷移図](http://g.gravizo.com/g?digraph G{graph[charset="UTF-8"];rankdir=LR;label="sample_fa";start->q0q0->r1[label="1"];r1->r2[label="1"];r2->r3[label="0"];r3->t[label="0"];q0->s[label="0"];r1->s[label="0"];s->s[label="0,1"];r2->r2[label="1"];r3->r2[label="1"];t->r2[label="1"];t->t[label="0"];t[shape=doublecirclerank=max];start[shape=nonerank=max];})
+<img src='https://g.gravizo.com/svg?
+  digraph G {
+    graph [charset="UTF-8"];
+    rankdir=LR;
+    label="sample_fa";
+    start    -> q0
+    q0       -> r1       [label="1"];
+    r1       -> r2       [label="1"];
+    r2       -> r3       [label="0"];
+    r3       -> t        [label="0"];
+    q0       -> s        [label="0"];
+    r1       -> s        [label="0"];
+    s        -> s        [label="0,1"];
+    r2       -> r2       [label="1"];
+    r3       -> r2       [label="1"];
+    t        -> r2       [label="1"];
+    t        -> t        [label="0"];
+    t        [shape=doublecircle rank=max];
+    start    [shape=none rank=max];
+  }
+'>
+
 
 
 
