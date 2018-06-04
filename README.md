@@ -55,29 +55,7 @@ digraph G {
 ```
 3. 上記のテキストを **graphviz**で処理すると、下記グラフが生成される。
 
-<img src='https://g.gravizo.com/svg?
-  digraph G {
-    graph [charset="UTF-8"];
-    rankdir=LR;
-    label="sample_fa";
-    start    -> q0
-    q0       -> r1       [label="1"];
-    r1       -> r2       [label="1"];
-    r2       -> r3       [label="0"];
-    r3       -> t        [label="0"];
-    q0       -> s        [label="0"];
-    r1       -> s        [label="0"];
-    s        -> s        [label="0,1"];
-    r2       -> r2       [label="1"];
-    r3       -> r2       [label="1"];
-    t        -> r2       [label="1"];
-    t        -> t        [label="0"];
-    t        [shape=doublecircle rank=max];
-    start    [shape=none rank=max];
-  }
-'>
-
-
+![](http://g.gravizo.com/g?%20digraph%20G%20{%20graph%20[charset="UTF-8"];%20rankdir=LR;%20label="sample_fa";%20start%20->%20q0%20q0%20->%20r1%20[label="1"];%20r1%20->%20r2%20[label="1"];%20r2%20->%20r3%20[label="0"];%20r3%20->%20t%20[label="0"];%20q0%20->%20s%20[label="0"];%20r1%20->%20s%20[label="0"];%20s%20->%20s%20[label="0,1"];%20r2%20->%20r2%20[label="1"];%20r3%20->%20r2%20[label="1"];%20t%20->%20r2%20[label="1"];%20t%20->%20t%20[label="0"];%20t%20[shape=doublecircle%20rank=max];%20start%20[shape=none%20rank=max];%20}%20)
 
 
 ## FA定義の書き方
